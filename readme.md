@@ -1,7 +1,7 @@
 ![WasteWise Logo](LogoWASTEWISE.svg)
 
 # Análise de caso: WasteWise
-### Para ver o projeto em Escopo Geral, acesse: `https://github.com/peguidotte/WasteWise`
+### Para ver o projeto em Escopo Geral, acesse: https://github.com/peguidotte/WasteWise
 
 ## Descrição do Projeto
 
@@ -10,7 +10,7 @@ O projeto WasteWise é uma análise de caso desenvolvida como parte da matéria 
 ## Funcionalidades
 
 - Análise de dados sobre quantidade de lixo produzida e recilcada em determinadas zonas e cidade (Dado ficticio para simulação)
-- Visualização de gráficos de estatísticas relacionadas ao lixo (Branch "grafico") `https://github.com/peguidotte/Analise-WasteWise/tree/grafico`
+- Visualização de gráficos de estatísticas relacionadas ao lixo (Branch "grafico") https://github.com/peguidotte/Analise-WasteWise/tree/grafico
 
 ## Tecnologias Utilizadas
 
