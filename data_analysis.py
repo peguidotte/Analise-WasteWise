@@ -1,4 +1,5 @@
 import time
+import matplotlib.pyplot as plt
 
 def calcular_media_soma(lista):
     if len(lista) == 0:
@@ -125,8 +126,15 @@ while total_lixo_cidade > total_lixo_cidade_incial/2:
             print(f"  Lixo produzido (Zona {zona}): {lixo_zona} toneladas.Equivale a {(lixo_zona / total_lixo_cidade)*100:.2f}% do total produzido.")
             print(f"  Percentual de reciclagem (Zona {zona}): {lixo_reciclado_zonas[zona]*100:.2f}%")
 
-        acesso = obter_acesso(f"\nDigite 'avançar' para simular o próximo ano: ", "Digite 'avançar' para simular o próximo ano: ", "avançar")
-        
-
-
-        
+        # Grafico do total de cada zona.
+        acesso = obter_acesso(f"\nDigite '1' para visualizar o gráfico do total de lixo por zona ou '2' para continuar a simulação do ano de {atual+1}: ", f"Digite '1' para visualizar o gráfico do total de lixo por zona ou '2' para continuar a simulação do ano de {atual+1}: ", "1", "2")
+        if acesso == "1":
+            plt.figure(figsize=(10, 6))
+            plt.bar(total_lixo_zonas.keys(), total_lixo_zonas.values(), color='green', label='Total de Lixo')
+            plt.xlabel(atual, fontsize=14)
+            plt.ylabel('Total de Lixo (milhôes de toneladas)', fontsize=14)
+            plt.title(f'Total de Lixo por Zona {atual}', fontsize=16)
+            plt.grid(True)
+            plt.legend()
+            plt.tight_layout()
+            plt.show()
